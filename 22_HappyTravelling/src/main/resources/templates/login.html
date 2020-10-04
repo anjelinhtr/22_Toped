@@ -17,8 +17,8 @@ href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 <div class="card bg-light">
 <article class="card-body mx-auto" style="max-width: 400px;">
 <h4 class="card-title mt-3 text-center">Login</h4>
-<form action="#" th:action="@{/login}" th:object="${user}"
-method="post">
+<form action="@{/login}" th:action="@{/}" th:object="${user}"
+method="get">
 <div class="form-group input-group">
 <div class="input-group-prepend">
  <span class="input-group-text"> <i class="fa fa-user"></i>
@@ -43,6 +43,8 @@ type="password" th:field="*{pwd}">
  <button type="submit" class="btn btn-primary btn-block">Login
 </button>
  </div> <!-- form-group// -->
+  <p class="text-center">No account? <a th:href="@{/registration}">Register</a>
+</p>
 </form>
 </article>
 </div> <!-- card.// -->
