@@ -11,21 +11,21 @@
     <div class="container">
         <h1>Happy Travelling</h1>
         <hr>
-        <h2>Save Penerbangan</h2>
+        <h2>Penerbangan</h2>
 
         <form action="#" th:action="@{/savePenerbangan}" th:object="${penerbangan}"
 			method="POST">
-			<input type="text" th:field="*{namaAsal}" placeholder="Nama Asal" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{namaAsal}" placeholder="From" class="form-control mb-4 col-4">
 				
-			<input type="text" th:field="*{namaTujuan}" placeholder="Nama Tujuan" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{namaTujuan}" placeholder="To" class="form-control mb-4 col-4">
 			
-			<input type="text" th:field="*{tanggalKeberangkatan}" placeholder="Tanggal Keberangkatan" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{tanggalKeberangkatan}" placeholder="Departure Date" class="form-control mb-4 col-4">
 				
-			<input type="text" th:field="*{tanggalKedatangan}" placeholder="Tanggal Kedatangan" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{tanggalKedatangan}" placeholder="Return Date" class="form-control mb-4 col-4">
 			
-			<input type="text" th:field="*{jumlah}" placeholder="Jumlah Penumpang" class="form-control mb-4 col-4">
+			<input type="text" th:field="*{jumlah}" placeholder="No. of Pessangers" class="form-control mb-4 col-4">
 				
-				<button type="submit" class="btn btn-info col-2"> Save Penerbangan</button>
+				<button type="submit" class="btn btn-info col-2"> Book</button>
 		</form>
 
         <hr>
